@@ -78,8 +78,15 @@ export default class PathfindingVisualizer extends Component {
 
     return (
       <>
+        <br />
+        <br />
         <button onClick={() => this.visualizeDijkstra()}>
           Visualize Dijkstra's Algorithm
+        </button>
+        <br />
+        <br />
+        <button onClick={() => window.location.reload()}>
+          Clear the Grid
         </button>
         <div className="grid">
           {grid.map((row, rowIdx) => {
